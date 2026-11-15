@@ -1,0 +1,4 @@
+# Google AdMob app-ads.txt
+# Replace pub-XXXXXXXXXXXXXXXX with your actual Google AdMob Publisher ID when you create your account
+google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+
