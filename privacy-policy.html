@@ -5,36 +5,289 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - Night Bubble Shooter: Starry Pop</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; }
-        h1, h2, h3 { color: #1a1a1a; }
-        .last-updated { color: #666; font-size: 0.9em; margin-bottom: 2em; }
+        :root {
+            --primary: #4F46E5;
+            --primary-dark: #3730A3;
+            --bg-color: #F8FAFC;
+            --card-bg: #FFFFFF;
+            --text-main: #1E293B;
+            --text-muted: #64748B;
+            --border-color: #E2E8F0;
+            --accent-bg: #EEF2FF;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            padding: 32px 16px;
+        }
+
+        .container {
+            max-width: 840px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--border-color);
+            padding: 40px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 24px 16px;
+            }
+        }
+
+        .header {
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 24px;
+            margin-bottom: 32px;
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: var(--accent-bg);
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 0.85rem;
+            padding: 4px 12px;
+            border-radius: 9999px;
+            margin-bottom: 12px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            color: #0F172A;
+            line-height: 1.25;
+            margin-bottom: 8px;
+        }
+
+        .meta {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin-top: 8px;
+        }
+
+        h2 {
+            font-size: 1.35rem;
+            color: #0F172A;
+            margin-top: 36px;
+            margin-bottom: 14px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        h3 {
+            font-size: 1.1rem;
+            color: #1E293B;
+            margin-top: 20px;
+            margin-bottom: 8px;
+        }
+
+        p {
+            margin-bottom: 14px;
+            color: #334155;
+        }
+
+        ul {
+            margin-bottom: 18px;
+            padding-left: 24px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: #334155;
+        }
+
+        strong {
+            color: #0F172A;
+        }
+
+        .highlight-box {
+            background: var(--accent-bg);
+            border-left: 4px solid var(--primary);
+            padding: 16px 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-size: 0.95rem;
+        }
+
+        .table-responsive {
+            overflow-x: auto;
+            margin: 18px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.92rem;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 12px 14px;
+            border: 1px solid var(--border-color);
+        }
+
+        th {
+            background-color: #F1F5F9;
+            color: #0F172A;
+            font-weight: 600;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border-color);
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            text-align: center;
+        }
     </style>
 </head>
 <body>
-    <h1>Privacy Policy</h1>
-    <div class="last-updated">Last Updated: November 2026</div>
+    <div class="container">
+        <header class="header">
+            <span class="badge">Official Compliance Policy</span>
+            <h1>Privacy Policy</h1>
+            <div class="meta">
+                <span><strong>Application:</strong> Night Bubble Shooter: Starry Pop</span>
+                <span><strong>Developer:</strong> Greenk</span>
+                <span><strong>Package ID:</strong> com.skgamers2105.bubbleblitz</span>
+                <span><strong>Effective Date:</strong> November 15, 2026</span>
+            </div>
+        </header>
 
-    <p>This Privacy Policy describes how <strong>Greenk</strong> ("we", "our", or "us") collects, uses, and discloses information when you download and play <strong>Night Bubble Shooter: Starry Pop</strong> and our mobile games and applications.</p>
+        <p>This Privacy Policy explains how <strong>Greenk</strong> ("we", "our", or "us") manages information when you download, install, and play <strong>Night Bubble Shooter: Starry Pop</strong> (the "Game") on Android devices through the Google Play Store.</p>
 
-    <h2>1. Information We Collect</h2>
-    <p>Our games are designed to be played without requiring personal account creation. However, our third-party service providers may collect non-personally identifiable information automatically:</p>
-    <ul>
-        <li><strong>Device Information:</strong> Device model, operating system version, unique device identifiers (e.g., Google Advertising ID).</li>
-        <li><strong>Game Analytics:</strong> Gameplay progress, level scores, and session duration.</li>
-    </ul>
+        <div class="highlight-box">
+            <strong>Key Summary:</strong> We respect your privacy. You do <strong>not</strong> need to register an account or provide personal information (such as your real name, email, address, or phone number) to play our game. Your game progress is stored securely on your own device. We integrate trusted Google services (Google AdMob) for monetization and game performance.
+        </div>
 
-    <h2>2. Third-Party Services & Advertising</h2>
-    <p>We use third-party advertising and monetization partners, primarily <strong>Google AdMob</strong> and <strong>Google Play Services</strong>. These services may collect and use pseudonymous advertising identifiers to serve relevant ads (including Banner, Interstitial, and Rewarded Video ads) in accordance with Google's privacy policies.</p>
-    <p>You can learn more about how Google uses data by visiting: <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">How Google uses information from sites or apps that use our services</a>.</p>
+        <h2>1. Information We Do NOT Collect</h2>
+        <p>We believe in data minimization. The Game does not require registration or personal logins. Therefore, we do <strong>not</strong> collect or store:</p>
+        <ul>
+            <li>Your real name, postal address, or physical location.</li>
+            <li>Your personal email address, phone number, or contacts list.</li>
+            <li>Your credit card, banking, or financial account details.</li>
+            <li>Biometric, health, microphone, or camera data.</li>
+        </ul>
 
-    <h2>3. Children's Privacy (COPPA Compliance)</h2>
-    <p>We do not knowingly collect personally identifiable information from children under the age of 13. If you believe we have inadvertently collected such data, please contact us immediately so we can remove it.</p>
+        <h2>2. Information Stored Locally on Your Device</h2>
+        <p>To provide a smooth, offline-friendly experience, the Game saves your gameplay state directly in your device's private local storage (HTML5 LocalStorage / IndexedDB). This includes:</p>
+        <ul>
+            <li>Current level progression (Levels 1 to 200).</li>
+            <li>In-game star ratings, high scores, and achievement timestamps.</li>
+            <li>Virtual coin balance and power-up inventory (Bombs, Rainbows, Fireballs).</li>
+            <li>User settings (sound effects volume, background music toggle, haptic vibration preferences).</li>
+        </ul>
+        <p><em>This data stays on your personal device and is not uploaded to our own private servers.</em></p>
 
-    <h2>4. Opt-Out & Advertising Preferences</h2>
-    <p>Players can reset or opt out of personalized advertising at any time through their Android device settings: <em>Settings &gt; Google &gt; Ads &gt; Delete advertising ID or Opt out of Ads Personalization</em>.</p>
+        <h2>3. Information Collected Automatically by Third Parties</h2>
+        <p>To support ongoing maintenance, optimize gameplay stability, and deliver in-game advertising, we integrate certified third-party software development kits (SDKs):</p>
 
-    <h2>5. Contact Us</h2>
-    <p>If you have any questions or feedback regarding this Privacy Policy, please contact us via our official support channel: <strong>greenk.support@gmail.com</strong>.</p>
+        <div class="table-responsive">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Provider</th>
+                        <th>Purpose</th>
+                        <th>Data Handled</th>
+                        <th>Privacy Documentation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Google AdMob</strong></td>
+                        <td>Monetization & In-Game Ads (Banner, Interstitial, Rewarded Video)</td>
+                        <td>Google Advertising ID (AAID), IP Address (for general geolocation), Ad interaction telemetry, Device model, OS version</td>
+                        <td><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google Ads Privacy</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Google Play Services</strong></td>
+                        <td>Core App Runtime & Platform Security</td>
+                        <td>Device identifiers, app installation status, system crash diagnostics</td>
+                        <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Play Privacy</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2>4. Device Permissions Used by the Application</h2>
+        <p>The Game requests only the minimal system permissions necessary for its intended features:</p>
+        <ul>
+            <li><strong><code>android.permission.INTERNET</code>:</strong> Required to communicate with Google AdMob servers for loading banner, interstitial, and rewarded video ads.</li>
+            <li><strong><code>android.permission.ACCESS_NETWORK_STATE</code>:</strong> Allows the app to detect internet availability so ad requests can be handled smoothly without freezing gameplay.</li>
+            <li><strong><code>android.permission.POST_NOTIFICATIONS</code>:</strong> Allows the app to send optional reminders (e.g., daily reward chest ready, energy refills). Players can grant, deny, or revoke this permission at any time in Android System Settings.</li>
+            <li><strong><code>android.permission.VIBRATE</code>:</strong> Provides tactile haptic feedback when bursting bubbles, aiming trick shots, or conquering boss levels. Can be disabled within the in-game Settings menu.</li>
+        </ul>
+
+        <h2>5. In-Game Advertisements & Player Choices</h2>
+        <p>Our game is offered free of charge, supported by advertising. We adhere to Google Play's <strong>Better Ads Standards</strong>:</p>
+        <ul>
+            <li><strong>Banner Ads:</strong> Displayed safely at the bottom of the screen, away from all interactive controls to eliminate accidental clicks.</li>
+            <li><strong>Interstitial Ads:</strong> Displayed only at natural gameplay transition points (such as level victory or defeat), with reasonable frequency caps.</li>
+            <li><strong>Rewarded Video Ads:</strong> 100% voluntary and player-initiated. Players choose whether to watch an ad in exchange for in-game rewards (e.g., extra coins or booster items).</li>
+        </ul>
+        <h3>Opting Out of Personalized Ads:</h3>
+        <p>You can reset or opt out of personalized interest-based advertising at any time through your Android device settings:</p>
+        <p><em>Open Android Settings &gt; Google &gt; Ads &gt; Tap "Delete advertising ID" or toggle "Opt out of Ads Personalization".</em></p>
+
+        <h2>6. Children's Privacy (COPPA & Google Play Families Policy)</h2>
+        <p><strong>Night Bubble Shooter: Starry Pop</strong> is designed for a general audience (ages 13 and above). We do not knowingly solicit or collect personal information from children under the age of 13. If you are a parent or guardian and believe that your child has provided personal information to us, please contact us at <a href="mailto:greenk.support@gmail.com">greenk.support@gmail.com</a>, and we will promptly take appropriate action to remove such information.</p>
+
+        <h2>7. Data Retention & Deletion Policy</h2>
+        <p>In accordance with Google Play Data Safety requirements, players have complete control over their data:</p>
+        <ul>
+            <li><strong>Local Game Data Deletion:</strong> You can permanently erase all local game progress, coins, and settings at any time by either clearing the app's storage in <em>Android Settings &gt; Apps &gt; Night Bubble Shooter &gt; Storage &gt; Clear Data</em>, or by uninstalling the Game.</li>
+            <li><strong>Advertising Data Deletion:</strong> You can reset or delete your Google Advertising ID through your Android device settings as described in Section 5.</li>
+            <li><strong>Inquiries & Requests:</strong> For any questions or deletion inquiries regarding diagnostic records, please reach out directly to our support team at <a href="mailto:greenk.support@gmail.com">greenk.support@gmail.com</a>.</li>
+        </ul>
+
+        <h2>8. Global Privacy Rights (GDPR & CCPA/CPRA)</h2>
+        <p>Depending on your geographic location, you may have specific statutory privacy rights:</p>
+        <ul>
+            <li><strong>European Economic Area & UK (GDPR):</strong> You have the right to request access to, rectification of, or erasure of any pseudonymous personal data processed by our third-party partners, and to object to or restrict processing.</li>
+            <li><strong>California Residents (CCPA/CPRA):</strong> We do not sell personal information for monetary consideration. Third-party ad partners may process identifiers for targeted advertising. You can opt out via your device's Google Ads settings.</li>
+        </ul>
+
+        <h2>9. Changes to This Privacy Policy</h2>
+        <p>We may update this Privacy Policy periodically to reflect changes in our operational practices, technical updates, or legal and regulatory obligations. Any revisions will be published directly on this page with an updated "Effective Date". We encourage players to review this page periodically.</p>
+
+        <h2>10. Contact Us</h2>
+        <p>If you have any questions, feedback, or privacy-related requests regarding this policy or our mobile games, please contact us at:</p>
+        <ul>
+            <li><strong>Studio / Publisher:</strong> Greenk</li>
+            <li><strong>Support Email:</strong> <a href="mailto:greenk.support@gmail.com">greenk.support@gmail.com</a></li>
+            <li><strong>Official Website:</strong> <a href="https://skgamers2105.github.io">https://skgamers2105.github.io</a></li>
+        </ul>
+
+        <footer class="footer">
+            <p>&copy; 2026 Greenk. All rights reserved. | Night Bubble Shooter: Starry Pop</p>
+        </footer>
+    </div>
 </body>
 </html>
-
